@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/squaregrid.css')
+    link(rel='stylesheet', href='/stylesheets/chat.css')
+    script(src='/socket.io/socket.io.js')
+    script(src='/javascripts/jquery-2.2.2.min.js')
+    script(src='/javascripts/chat.js')
+  body
+    br
+    #wrapper
+      .sg-27
+        input#id(type='hidden', value=id)
+        | 名前：
+        input#myname(size=10, readonly=true)
+        | メッセージ：
+        input#message(size=50)
+        input#post(type='button', value='送信')
+        br
+      .sg-6
+        select#user(multiple, size=5)
+      
+      .entry
+        #messages.sg-35.entry-content

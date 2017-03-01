@@ -1,0 +1,85 @@
+.entry-content ul ,
+.entry-content ol {
+   position : relative ;
+   margin : 15px 30px 15px 0 ;
+   padding : 12px 15px ;
+   background : #e6e6e6 ;
+   list-style : none ;
+   -webkit-border-radius: 7px ;
+   -moz-border-radius: 7px ;
+   -ms-border-radius: 7px ;
+   -o-border-radius: 7px ;
+   border -radius: 7px ;
+}
+.entry-content li { word-break: break-all }
+.entry-content li img ,
+.entry-content li iframe ,
+.entry-content li object {
+   float : none ;
+   max-width : 100% ;
+   margin : 0 ;
+}
+.entry-content ul li + li ,
+.entry-content ol li + li ,
+.entry-content ul ul ,
+.entry-content ul ol ,
+.entry-content ol ul ,
+.entry-content ol ol {
+   margin : 10px 0 0 ;
+   padding : 10px 0 0 ;
+   border-top : 1px solid #ccc ;
+   -webkit-border-radius: 0 ;
+   -moz-border-radius: 0 ;
+   -ms-border-radius: 0 ;
+   -o-border-radius: 0 ;
+   border-radius: 0 ;
+}
+.entry-content ol ul ,
+.entry-content ol ol { border-color : #b5d96d }
+.entry-content ul li + li ,
+.entry-content ol li + li {
+   border : 0 ;
+   padding : 0 ;
+   margin-top : 5px ;
+}
+.entry-content ul : before ,
+.entry-content ol : before {
+   position : absolute ;
+   content : '' ;
+   display : block ;
+   bottom : 10px ;
+   width : 12px ;
+   height : 12px ;
+   -webkit-background-size : 12px 12px ;
+   -moz-background-size : 12px 12px ;
+   -ms-background-size : 12px 12px ;
+   -o-background-size : 12px 12px ;
+   background-size : 12px 12px ;
+}
+.entry-content ul : before {
+   background : url( "images/arrow_4.gif" ) ;
+   left : -12px ;
+}
+.entry-content ol {
+   margin : 15px 0px 15px 30px ;
+   background : #d3ee9c ;
+}
+.entry-content ol : before {
+   background : url( "images/arrow_1.gif" ) ;
+   right : -12px ;
+}
+.entry-content ul ul : before ,
+.entry-content ul ol : before ,
+.entry-content ol ul : before ,
+.entry-content ol ol : before { display : none }
+.entry-content {
+   overflow : visible ;
+   padding-left : 25px ;
+   padding-right : 25px ;
+   margin-left : 0 ;
+   margin-right : 0 ;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),(-webkit-min-device-pixel-ratio: 1 . 5) { 
+   .entry-content ul:before { background : url( "images/arrow_2.gif" ) }
+   .entry-content ol : before { background : url( "images/arrow_3.gif" ) }
+}

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  form#f(method='post', action='/chat/')
+    input#id(type='text', size=10)
+    input#login(type='button', value='ログイン')
+  script(src='/javascripts/jquery-2.2.2.min.js')
+  script(src='/javascripts/login.js')
